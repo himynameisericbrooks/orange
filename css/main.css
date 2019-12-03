@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* nav styles */
+nav {
+    background-color: #FE7E00;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+.left {
+    display: flex;
+    padding-left: 7%;
+}
+.right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3%;
+}
+
+nav p {
+    font-size: 40px;
+    font-weight: 300;
+}
+.logo {
+    filter: invert(100%);
+    transform: rotate(-18deg);
+    width: 50px;
+}
+
+nav span {
+    font-size: 14px;
+    position: relative;
+    bottom: 8px;
+}
+
+ul {
+    display: flex;
+}
+
+nav ul li {
+    font-weight: 100;
+    font-size: 12px;
+    padding: 0 19px;
+}
+
+/* search */
+.search {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 5%;
+}
+.searchBox {
+    background-color: #e4e4e4;
+    font-family: sans-serif;
+    padding-right: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.fas {
+    position: relative;
+    right: 35px;
+    top: 2px;
+    color: #b1b1b1;
+}
+
+/* main styles */
+.main {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 0 65px;
+}
+.shadowfruit {
+    height: 460px;
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fruit {
+    filter: hue-rotate(27deg);
+    width: 70%;
+    z-index: 2;
+    position: relative;
+    top: 35px;
+    right: -35px;
+}
+.shadow {
+    filter: grayscale(100%) blur(20px) opacity(.6);
+    width: 30%;
+    position: relative;
+    bottom: 55px;
+    left: 60px;
+    z-index: 1;
+}
+.bigo {
+    font-size: 42px;
+    font-weight: 800;
+}
+.main p {
+    color: #FE9329;
+    font-size: 40px;
+    font-weight: 300;
+}
+.break {
+    display: none;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    width: 100%;
+}
+.quote {
+    text-align: center;
+    background-color: #FE7F01;
+    height: 55px;
+    width: 245px;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 20px 20px 20px 10px;
+    border-radius: 4%;
+}
+.case {
+    text-align: center;
+    background-color: #7ACCC8;
+    height: 55px;
+    width: 245px;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 20px 20px 20px 10px;
+    border-radius: 4%;
+}
+.blue {
+    color: #8CBDB5;
+}
+
+/* footer styles */
+footer {
+    background-color: #7ACCC8;
+    height: 90px;
+}
+
+/* main fixes */
+@media (max-width: 1075px) {
+    .box p {
+        font-size: 36px;
+    }
+}
+@media (max-width: 1010px) {
+    .buttons {
+        width: 80%;
+        flex-direction: column;
+        align-self: center;
+        position: relative;
+        right: -45px;
+    }
+    .case .quote {
+        margin: 10px 10% 0 10%;
+    }
+}
+
+@media (max-width: 985px) {
+    .main p {
+    width: 105%;
+    position: relative;
+    right: 5%;
+    }
+}
+
+@media (max-width: 910px) {
+    .box p {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 885px) {
+    .main p {
+        width: 110%;
+    }
+}
+
+@media (max-width: 826px) {
+    .main p {
+    width: 90%;
+    position: relative;
+    left: 5%
+    }
+}
+
+@media (max-width: 760px) {
+    nav {
+        flex-direction: column;
+    }
+    .right {
+        padding-left: 3%;
+        padding-bottom: 3px;
+    }
+    .left {
+        padding: 0;
+        align-items: center;
+        position: relative;
+        top: 15%;
+    }
+}
+
+@media (max-width: 750px) {
+    .shadowfruit {
+        display: none;
+    }
+    .case {
+        margin-bottom: 50px;
+    }
+    .main {
+        margin: auto;
+        padding: 10% 0% 10% 0%;
+        text-align: center;
+    }
+    .main p {
+        position: relative;
+        padding: 0 10% 0 0;
+        font-size: 50px;
+        right: -60%;
+    }
+    .box {
+        align-items: center;
+        padding: 0;
+    }
+    .box p {
+        margin: auto;
+    }
+    .buttons {
+        padding: 20% 0 0 0;
+        align-items: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .main p {
+        font-size: 38px;
+    }
+    .box {
+        margin: auto;
+    }
+    .buttons {
+        right: 0;
+        margin: auto;
+    }
+}
+@media (max-width: 450px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul li {
+        padding: 0 1.5%;
+    }å
+    .main p {
+        font-size: 30px;
+    }
+}
