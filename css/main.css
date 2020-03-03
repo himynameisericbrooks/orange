@@ -94,14 +94,19 @@ nav ul li {
     right: -35px;
 }
 .shadow {
-    filter: grayscale(100%) blur(20px) opacity(.6);
+    filter: grayscale(95%) 
+    blur(17px) 
+    opacity(.5);
     width: 30%;
     position: relative;
-    bottom: 55px;
-    left: 60px;
+    bottom: 120px;
+    left: 10px;
     z-index: 0;
 }
-.bigo {
+.main-text {
+    width: 100%;
+}
+.bold-lemon {
     font-size: 42px;
     font-weight: 800;
 }
@@ -121,6 +126,7 @@ nav ul li {
 .buttons {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 30px;
     width: 100%;
 }
@@ -152,7 +158,10 @@ nav ul li {
 footer {
     background-color: #143d59;
     height: 90px;
+    z-index: 99;
 }
+
+
 
 /* main fixes */
 @media (max-width: 1075px) {
@@ -160,28 +169,69 @@ footer {
         font-size: 36px;
     }
 }
-@media (max-width: 1010px) {
+/* @media (max-width: 1010px) {
+    .case .quote {
+        margin: 10px 10% 0 10%;
+    }
+} */
+
+@media (max-width: 985px) {
+    .box {
+        padding: 0;
+        margin: 35px;
+    }
+    .main-text {
+        height: 35vh;
+    }
+    .main {
+        padding: 0;
+        margin: 0;
+    }
+    .main p {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    }
+    .shadowfruit {
+        display: none;
+    }
+    .buttons {
+        margin-bottom: 20vh;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 560px) {
     .buttons {
         width: 80%;
         flex-direction: column;
         align-self: center;
+    }
+    .quote {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 760px) {
+    nav {
+        flex-direction: column;
+    }
+    .right {
+        padding-left: 3%;
+        padding-bottom: 3px;
+        margin-bottom: 3px;
+    }
+    .left {
+        padding: 0;
+        align-items: center;
         position: relative;
-        right: -45px;
-    }
-    .case .quote {
-        margin: 10px 10% 0 10%;
+        top: 15%;
     }
 }
 
-@media (max-width: 985px) {
-    .main p {
-    width: 105%;
-    position: relative;
-    right: 5%;
-    }
-}
 
-@media (max-width: 910px) {
+
+/* @media (max-width: 910px) {
     .box p {
         font-size: 35px;
     }
@@ -201,26 +251,7 @@ footer {
     }
 }
 
-@media (max-width: 760px) {
-    nav {
-        flex-direction: column;
-    }
-    .right {
-        padding-left: 3%;
-        padding-bottom: 3px;
-    }
-    .left {
-        padding: 0;
-        align-items: center;
-        position: relative;
-        top: 15%;
-    }
-}
-
 @media (max-width: 750px) {
-    .shadowfruit {
-        display: none;
-    }
     .case {
         margin-bottom: 50px;
     }
@@ -267,8 +298,8 @@ footer {
     }
     nav ul li {
         padding: 0 1.5%;
-    }å
+    }
     .main p {
         font-size: 30px;
     }
-}
+} */
